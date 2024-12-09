@@ -13,7 +13,7 @@ public class WebsockChatHandler extends TextWebSocketHandler {
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         String payload = message.getPayload();
         log.info("payload {}", payload);
-        TextMessage textMessage = new TextMessage("Welcom Chat Server");
+        TextMessage textMessage = new TextMessage("Welcom Chat Server!!!");
         session.sendMessage(textMessage);
     }
 }
